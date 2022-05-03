@@ -1,7 +1,12 @@
+import { StyleSheet } from "react-native";
 import "../styles/styles.css";
 interface PropsScreenStart {
   click: any;
 }
+
+const ScreenStartStyles = StyleSheet.create({
+  
+})
 
 export function ScreenStart(props: PropsScreenStart) {
   return (

@@ -1,5 +1,14 @@
 import "../styles/styles.css";
+import { StyleSheet } from "react-native";
+
+import * as Icon from 'react-bootstrap-icons';
+const optionDots = StyleSheet.create({
+  mainDots: {
+    color: "#fff",
+    fontsize: "20px"
+  }
+})
 
 export function Options() {
-  return <i className="bi bi-three-dots-vertical main-dots"></i>;
+  return <BarChartLineFill style={optionDots.mainDots}/>;
 }
