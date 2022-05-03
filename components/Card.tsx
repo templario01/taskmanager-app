@@ -1,3 +1,5 @@
+import "../styles/styles.css";
+
 interface PropsCard {
   keyCard: number;
 }

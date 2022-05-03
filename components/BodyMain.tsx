@@ -1,6 +1,6 @@
 import { Card } from "./Card";
 import { AddCard } from "./AddCard";
-
+import "../styles/styles.css";
 
 export function BodyMain() {
     const list = [1, 2, 3, 4]

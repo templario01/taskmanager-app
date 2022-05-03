@@ -2,7 +2,7 @@ import { useState } from "react"
 import { ScreenOnboard } from "./ScreenOnboard";
 import { ScreenStart } from "./ScreenStart";
 import { MainScreen } from "./MainScreen";
-
+import "../styles/styles.css";
 
 export function Phone() {
     // estados

@@ -1,3 +1,5 @@
+import "../styles/styles.css";
+
 export function ScreenOnboard() {
     return (
       <div className="first-phone" style={{ width: '100%', height: '100%' }}>

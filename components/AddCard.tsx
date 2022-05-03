@@ -1,3 +1,5 @@
+
+import "../styles/styles.css";
 export function AddCard() {
   return (
     <div className="addCard">
