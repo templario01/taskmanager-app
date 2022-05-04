@@ -1,6 +1,6 @@
 import "../styles/styles.css";
 import { StyleSheet } from "react-native";
-// import { BsFillBellFill } from "react-icons/bs";
+import { BsFillBellFill } from "react-icons/bs";
 
 // .main-bell,
 // .main-dots {
@@ -11,10 +11,10 @@ import { StyleSheet } from "react-native";
 const notificationsBell = StyleSheet.create({
   mainBell: {
     color: "#fff",
-    fontsize: "20px"
+    fontSize: 20
   }
 })
 
 export function Notifications() {
-  // return <BsFillBellFill style={notificationsBell.mainBell} />;
+  return <BsFillBellFill style={notificationsBell.mainBell} />;
 }

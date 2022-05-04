@@ -12,7 +12,7 @@ const mainLogoComponent = StyleSheet.create({
   mainLogo:{
     fontfamily: "Inter",
     fontweight: "900",
-    fontsize: "16px",
+    fontSize: 16,
     color: "#fff",
   }
 })

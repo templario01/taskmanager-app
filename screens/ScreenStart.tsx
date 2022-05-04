@@ -1,25 +1,53 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet, View, Text, Button, Alert } from "react-native";
 import "../styles/styles.css";
 interface PropsScreenStart {
   click: any;
 }
 
 const ScreenStartStyles = StyleSheet.create({
-  
+  secondPhone:{
+    height: "90%",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "space-around",
+  },
+  secondH1: {
+    fontFamily: "Inter",
+    fontWeight: "900",
+    fontSize: 56,
+    color: "#fff",
+  },
+  secondPhrase: {
+    fontFamily: "Open Sans",
+    fontStyle: "normal",
+    fontWeight: "400",
+    fontSize: 30,
+    color: "#ffffff",
+  },
+  secondBtn: {
+    fontFamily: "Montserrat",
+    fontStyle: "normal",
+    fontWeight: "800",
+    fontSize: 24,
+    color: "#0a0416",
+    background: "#ffffff",
+    bordeRadius: 12,
+    width: "298px",
+    height: "56px",
+  }
 })
 
 export function ScreenStart(props: PropsScreenStart) {
   return (
-    <div style={{ width: "100%", height: "100%" }} className="second-phone">
-      <h1 className="second-h1">on.time</h1>
-      <h3 className="second-phrase">
+    <View style={ScreenStartStyles.secondPhone}>
+      <Text style={ScreenStartStyles.secondH1}>on.time</Text>
+      <Text style={ScreenStartStyles.secondPhrase}>
         Make yourself
         <br />
         more on time
-      </h3>
-      <button onClick={props.click} className="second-btn">
-        START
-      </button>
-    </div>
+      </Text>
+      <Button onPress={() => Alert.alert('Left button pressed')} title="START"/>
+    </View>
   );
 }
