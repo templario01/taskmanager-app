@@ -10,7 +10,7 @@ const containerStyles = StyleSheet.create({
     position: "relative",
     width: "414px",
     height: "896px",
-    background: `linear-gradient(191.14deg,#2a2a2e -5.44%,#2b125a 52.05%,#000000 112.41%)`,
+    backgroundColor: '#160A2F',
     alingItems: "center",
     display: "flex",
     justifyContent: "center",

@@ -9,8 +9,6 @@ const ScreenOnboardStyles = StyleSheet.create({
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "space-around",
-    animationDuration: "3s",
-    animationName: "fadeIn",
   },
   firstH1: {
     fontFamily: "Inter",
