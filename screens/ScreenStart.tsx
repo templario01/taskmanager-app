@@ -1,4 +1,4 @@
-import { StyleSheet, View, Text, Button, Alert } from "react-native";
+import { StyleSheet, View, Text, Button, Alert, TouchableOpacity } from "react-native";
 import "../styles/styles.css";
 interface PropsScreenStart {
   click: any;
@@ -26,15 +26,23 @@ const ScreenStartStyles = StyleSheet.create({
     color: "#ffffff",
   },
   secondBtn: {
+    backgroundColor: "#ffffff",
+    width: "298px",
+    height: "56px",
+    borderBottomLeftRadius: 12,
+    borderBottomRightRadius: 12,
+    borderTopRightRadius: 12,
+    borderTopLeftRadius: 12,
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center"
+  },
+  secondBtnText:{
     fontFamily: "Montserrat",
     fontStyle: "normal",
     fontWeight: "800",
     fontSize: 24,
     color: "#0a0416",
-    background: "#ffffff",
-    bordeRadius: 12,
-    width: "298px",
-    height: "56px",
   }
 })
 
@@ -47,7 +55,10 @@ export function ScreenStart(props: PropsScreenStart) {
         <br />
         more on time
       </Text>
-      <Button onPress={() => Alert.alert('Left button pressed')} title="START"/>
+      <TouchableOpacity onPress={() => console.log("buttonactive")} style={ScreenStartStyles.secondBtn}>
+        <Text style={ScreenStartStyles.secondBtnText}>START</Text>
+      </TouchableOpacity>
+      {/* <Button onPress={() => Alert.alert('Left button pressed')} title="START"/> */}
     </View>
   );
 }
